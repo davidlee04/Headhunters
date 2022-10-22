@@ -22,7 +22,7 @@ function Form(props){
         <div className = "Form" >
             <form>
                 <label>
-                    Input:
+                    Email Address: 
                     <input type="text" value={name} />
                 </label>
                 <br/>

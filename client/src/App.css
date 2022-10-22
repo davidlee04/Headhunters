@@ -11,3 +11,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.App-start {
+  min-height: 10vh
+}
+
+label {
+  font:100;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
