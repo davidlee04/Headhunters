@@ -26,7 +26,7 @@ function Form(props){
                     <input type="text" value={name} />
                 </label>
                 <br/>
-                <input type="submit" value="Submit" />
+                <input className="App-submit" type="submit" value="Submit" />
             </form>
             {users.map((user)=> {
                 return (

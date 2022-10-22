@@ -8,17 +8,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: white;
 }
 
 .App-start {
-  min-height: 10vh
+  min-height: 5vh;
+}
+
+.App-submit {
+  min-width: 8vh;
+  border: 5px;
+  margin-top: 10px;
 }
 
 label {
   font:100;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 20vh
 }
+
 
 
