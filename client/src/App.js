@@ -1,15 +1,23 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
-import Form from "./components/Form.jsx";
+import Form from "./components/RegistrationForm.jsx";
+import Home from "./pages/Home.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [user, setUser] = useState({});
+
   return (
-    <div className="App">
-      <h1 className = "App-header">WELCOME TO HEADHUNTERS</h1> 
-      <h2 className = "App-start">Start by entering your email below:</h2>
-      <Form />
-    </div>
-   
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Form />} />
+          <Route path="/register" element={<Form />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

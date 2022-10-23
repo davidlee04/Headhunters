@@ -1,16 +1,27 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  sendPasswordResetEmail,
+  signOut,
+} from "firebase/auth";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyCHmKmTRi0AySI_ffmJOoojmcsDJ4BMOvs",
-    authDomain: "headhunters-74d27.firebaseapp.com",
-    databaseURL: "https://headhunters-74d27-default-rtdb.firebaseio.com",
-    projectId: "headhunters-74d27",
-    storageBucket: "headhunters-74d27.appspot.com",
-    messagingSenderId: "761276865839",
-    appId: "1:761276865839:web:39a6f7a9de39b6794515da",
-    measurementId: "G-8LKY24ZQZ0"
-  };
+  apiKey: "AIzaSyCIvQxGR9d6C33ho4oKM-_ephrRusl-yP4",
+  authDomain: "headhunters2-ba5a2.firebaseapp.com",
+  projectId: "headhunters2-ba5a2",
+  storageBucket: "headhunters2-ba5a2.appspot.com",
+  messagingSenderId: "1078207664176",
+  appId: "1:1078207664176:web:4009cb91ccbcd48a301df5",
+  measurementId: "G-FSLZPVL0QS",
+};
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
+export { db, auth };
